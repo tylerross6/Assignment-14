@@ -1,5 +1,5 @@
 ---
-- name: 10.0.0.178
+- name: all
   become: true
 
   vars:
