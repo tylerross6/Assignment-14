@@ -11,14 +11,14 @@
   tasks:
   - name: create dev-report file
     file:
-    path: /tmp/dev-report
-    state: touch
-    owner: james
-    group: james
-    mode: 777
+     path: /tmp/dev-report
+     state: touch
+     owner: james
+     group: james
+     mode: 777
 
   - name: add line to playbook
-     lineinfile:
-      path: /tmp/dev-report
-      line: This is my test to add a new line to file with a Ansible Playbook
-      create: yes
+    lineinfile:
+     path: /tmp/dev-report
+     line: This is my test to add a new line to file with a Ansible Playbook
+     create: yes
