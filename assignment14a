@@ -1,0 +1,11 @@
+---
+- name: create jamesfile in his home directory
+  hosts: all
+
+  tasks:
+  - name: create file
+    file:
+     path: /home/james/jamesfile
+     state: touch
+     owner: james
+     group: james
