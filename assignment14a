@@ -3,6 +3,10 @@
   hosts: all
 
   tasks:
+  - name: create james user
+    user:
+     name: james
+     state: present
   - name: create file
     file:
      path: /home/james/jamesfile
