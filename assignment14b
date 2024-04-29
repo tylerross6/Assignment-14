@@ -7,11 +7,11 @@
    file_group: james
    file_path: "/tmp/dev-report"
 
-   tasks:
-   - name: create dev-report file
-      file:
-      path: /tmp/dev-report
-      state: touch
-      owner: james
-      group: james
-      mode: 777
+  tasks:
+  - name: create dev-report file
+    file:
+     path: /tmp/dev-report
+     state: touch
+     owner: james
+     group: james
+     mode: 777
