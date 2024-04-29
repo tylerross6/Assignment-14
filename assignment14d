@@ -1,0 +1,17 @@
+---
+- name: update permissions for dev-report
+  hosts: all
+  become: true
+
+  tasks:
+  - name: create dev user
+    user:
+     name: dev
+     state: present
+
+  - name: update dev-report file
+    file:
+     path: /tmp/dev-report
+     owner: dev
+     group: dev
+     mode: 0644
