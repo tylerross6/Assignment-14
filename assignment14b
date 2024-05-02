@@ -14,4 +14,4 @@
      state: touch
      owner: james
      group: james
-     mode: 777
+     mode: 0777
