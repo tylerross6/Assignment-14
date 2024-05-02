@@ -15,7 +15,7 @@
      state: touch
      owner: james
      group: james
-     mode: 777
+     mode: 0777
 
   - name: add line to playbook
     lineinfile:
